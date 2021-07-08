@@ -11,6 +11,19 @@
   transition-duration: 0.4s;
   /* align-items: center; */
 }
+.results_div_phone{
+  border-radius: 12px;
+  background-color: #3a3a3a;
+  text-align: center;
+  height: 75px;
+  width: 250px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+  display: block;
+  margin-left: 25px;
+  margin-bottom: 10px;
+  transition-duration: 0.4s;
+  /* align-items: center; */
+}
 .results_div:hover{
   transform: scale(1.05);
 }
@@ -46,6 +59,38 @@
   margin-right:10px;
   /* padding-top:25px; */
 }
+.result__style_1_phone{
+  font-weight: bold;
+  color: white;
+  border-radius: 12px;
+  /* height: 100%; */
+  /* text-align: right; */
+  float: left;
+  /* color:black; */
+  font-family: Arial;
+  font-size: 15px;
+  margin-left:10px;
+  /* padding-top: 20px; */
+  /* padding-top:25px; */
+}
+
+.result__style_2_phone{
+  font-weight: bold;
+  color: white;
+  border-radius: 12px;
+  background-color: green;
+  padding-right: 10px;
+  padding-left: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  /* text-align: right; */
+  float: right;
+  /* color:black; */
+  font-family: Arial;
+  font-size: 15px;
+  margin-right:10px;
+  /* padding-top:25px; */
+}
 .result__span{
   margin-right: 30px;
   border-radius: 12px;
@@ -55,4 +100,14 @@
 .equation__span{
   margin-right: 90px;
   /* text-align: left; */
+}
+.Desktop{
+  display: block;
+}
+.Phone {
+        display: none;
+    }
+@media only screen and (max-device-width: 380px) {
+    .Phone{display: block;}
+    .Desktop {display: none;}
 }
