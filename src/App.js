@@ -1,23 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
-
+import CalcDisplay from './components/CalcDisplay'
+import ResultList from './components/ResultList'
+import React, { useState } from 'react'
+const RESULTS = [];
 function App() {
+  const [total_result, setTotalResults] = useState(RESULTS);
+  const addResultHandler = (result) => {
+    setTotalResults(prevResults =>
+      { return [result, ...prevResults]
+      });
+    };
+    const clearResultHandler = () => {
+      setTotalResults([])
+    }
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <CalcDisplay onNewResult={addResultHandler}/>
+      <ResultList items={total_result} onClear={clearResultHandler}/>
     </div>
   );
 }

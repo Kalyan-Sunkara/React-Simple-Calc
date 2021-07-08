@@ -1,0 +1,54 @@
+.ResultList__card{
+  border-radius: 12px;
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.25);
+  height: 400px;
+  width: 700px;
+  overflow-y: scroll;
+  margin: 2rem auto;
+  background-color: #dadce0;
+}
+.Clear__Button__Style{
+  margin-left: 50px;
+  /* height: 40px;
+  width: 60px; */
+  margin-top: 15px;
+  background-color: #dadce0; /* Green */
+  border: 1px solid black;
+  /* border-radius: 12px; */
+  color: black;
+  /* padding: 15px 32px; */
+  /* margin-left: 5px; */
+  /* margin-bottom: 10px; */
+  text-align: center;
+  text-decoration: none;
+  /* display: inline-block; */
+  font-size: 16px;
+  height: 40px;
+  width:60px;
+  transition-duration: 0.4s;
+}
+.Clear__Button__Style:hover{
+  background-color: #3e8e41;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+.Clear__Button__Style:active{
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+.top{
+  display: inline-flex;
+}
+.ResultList__scroll{
+  overflow-y: scroll;
+}
+.ResultList__header{
+  color: black;
+  margin-left: 250px;
+  /* text-align: center; */
+  font-family: Arial;
+}
+.ResultList__ul {
+  list-style: none;
+  padding: 0;
+}
